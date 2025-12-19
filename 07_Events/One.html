@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <ul id="images">
+      Amazing Spiderman-Images
+      <li>
+        <img
+          width="200px"
+          id="one"
+          src="https://upload.wikimedia.org/wikipedia/en/e/e0/The_Amazing_Spider-Man_%28film%29_poster.jpg"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          width="200px"
+          id="two"
+          src="https://www.rollingstone.com/wp-content/uploads/2018/06/rs-150234-rectangle.jpg?w=624&h=420&crop=1"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          width="200px"
+          id="three"
+          src="https://static0.srcdn.com/wordpress/wp-content/uploads/2023/02/andrew-garfield-as-spider-man-and-emma-stone-as-gwen-stacy-in-the-amazing-spider-man-movies.jpg?w=1200&h=675&fit=crop"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          width="200px"
+          id="four"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZdHx6RpHo0zKLQ6xhZWw2dMwr9gsHjk6mCA&s"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          width="200px"
+          id="five"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjb7TJzOKv8ZpWzbVeVPoZSlEeE2wWrgMLUA&s"
+          alt=""
+        />
+      </li>
+    </ul>
+  </body>
+  <script>
+    // document.getElementById('three').onclick=function(){
+    //     alert('SpiderMan-Lost-His-MJ')
+    // }
+
+    // document.getElementById("three").addEventListener("click", function () {
+    //   alert("SPIDERMAN-LOST-HIS-MJ");
+    // });
+
+    // document.body.addEventListener("click", (e) => {
+    //   console.log("target:", e.target);
+    //   console.log("current:", e.currentTarget);   // Scrren-X --->>> Where is the Mouse Position Elemsnt respect to the Screen 
+    //   console.log("x,y:", e.clientX, e.clientY); // Client-X --->>> Where the Mouse Position of Element Respect to Browser 
+    // });
+     let H
+    // Now we Will be Learning About the AddEventListner Propagation
+      document.getElementById("images").addEventListener("click", function () {
+     console.log("SPIDERMAN");
+    },false); //-->> False Will be Deafult Value
+
+
+
+         // LEARN ABOUT EVENT PROPAGATION AND STOPPROPAGATION VERY IMPORTANT    
+       document.getElementById("three").addEventListener("click", function (e) {
+      alert("SPIDERMAN-LOST-HIS-MJ"); // e.stopPropagation() these will be used stop event Bubbling 
+    },false); //-->> True will given by us
+     // Here Event Listner if we give false and now if i give false event bubbling then here and clicking three then only upper elemnt is Lsitned 
+     // here if i guve true then first upper will be Happens and then Lower will be Happended 
+  
+     // DEFUALTPREVENTED HERE THINK IHAVE GOOGLE LINK I DONT WANT TO DIRECTLY GO TO THE GOOGLE LINK THEN I WILL USE THES E
+    
+    const div= document.getElementById('one').addEventListener('click',function(e){
+        H= e.target.parentNode.remove()
+    
+    })
+    
+  </script>
+</html>
