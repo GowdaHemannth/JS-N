@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+   <ul class="language">
+    <li>Javascript</li>
+   </ul> 
+</body>
+<script>
+    // ADDING THE ELEMENT
+    function addLan(LangName){
+        const div=document.createElement('li')
+        div.innerHTML=`${LangName}` // Since theseInnerHtnl uses lot of tree tracing so we will use textNode document.createTextNode(langName)
+        // Optmised Version is 
+        // div.appendchild(dicument.createTextNode(LangName))
+        // below is Same Beacuse is it will tell you where you need to Add the Child 
+        document.querySelector('.language').appendChild(div)
+    }
+    addLan('Python')
+
+    // NOW EDITING THE ELEMENT
+    const secondEle=document.querySelector('li:nth-child(2)')
+    console.log(secondEle)
+    // hrere just you can write like secondEle=secondlang.innerhtml="something
+    //  but you know its not optimised "
+    const newEle=document.createElement('li')
+    newEle.textContent='Mojo'
+   console.log( secondEle.replaceWith(newEle));
+   
+
+   // REMOVE THE ELEMXNT 
+   const lastLang=document.querySelector('li:last-child')
+   console.log(lastLang)
+   lastLang.remove()
+ </script>
+
+</html>

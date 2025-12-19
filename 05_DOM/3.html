@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai-aur-code</title>
+  </head>
+  <body style="background-color: black; color: #fff"></body>
+  <script>
+    const div = document.createElement("div");
+    console.log(div);
+    div.className = "main";
+    div.id = "title";
+    // SET attribute is btter Because it directely sets the Value unlike the 
+    //.innertext,.classname becuase here it will get the value then set the Values 
+    div.setAttribute("title", "Generated Title");
+    div.style.backgroundColor = "green";
+    div.style.padding = "15px";
+
+    // WHATEVER WE WROTE ABOVE WILL ONLY BE DISPLAYED IN CONSOLE IN THE BROWSER BUT NOT IN THE HTML PAGE
+    // BEACUSE WHATEVER WE CREATED WILL ONLY BE DISPLAYED IN THECONSOLE BECUASE ITS ONLY STORED IN MEMORY
+    const addText=document.createTextNode("Chai aur Code")
+    div.appendChild(addText)
+
+    // Now here it will be Diaplyed in the HTML TEXT PAGE
+    // appendchild used to add the Child Thats all 
+    document.body.appendChild(div)
+  </script>
+</html>

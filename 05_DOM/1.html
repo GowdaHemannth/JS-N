@@ -1,0 +1,62 @@
+DOM is the browser's representation of the webpage that JavaScript can use to
+read and update the page. Here you can find any of the Class or Tag Through the
+Id padding used to increase the Hieght of the Style
+
+<!-- HERE WHILE USING DOM OR JAVASCRIPT YOU MIGHT GET HTMLCOLLECTION 
+     OR NODELIST HENCE CONVERT THEM INTO THE ARRAY -->
+<!-- Array.from() --> THESE HELPS TO CONVERT THE EVERYTHING FROM THINGS TO ARRAY
+<!-- ALL THE CHANGES WHICH I MENTIONED HERE WILL ONLY BE AVAIBLE IN WEB PAGE ONLY  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-LEARNING</title>
+    <style>
+      .bg-class {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-class">
+    <div>
+      here as you can see We can Set A Atrribute By Just Selecting Id we rename
+      the Class In it
+      <!-- const H=document.querySelectorAll('h1') -->
+      <!-- These will give you thing in Nodelist  -->
+      <!-- H[0].style.color='green'
+'green' -->
+      You Can access throug them like these
+      <!-- Since its nodelist you can Acees them through the Foreach Loop -->
+      <h1 id="title" class="heading">Dom Learning on Chai-aur-ode</h1>
+      document.getElementById('title').setAttribute('class','test')
+      <h1 id="title" class="heading">Dom Learning on Chai-aur-ode</h1>
+      <h1 id="title" class="heading">Dom Learning on Chai-aur-ode</h1>
+      Here you can select the all H1 TAGS Through the QuerySlectors AND GIVEN
+      OUTPUT WILL BE IN THE FOR OF NODELIST
+
+      <ul>
+        <li class="list-item">One</li>
+        <li class="list-item">Two</li>
+        <li class="list-item" >Three</li>
+      </ul>
+    </div>
+  </body>
+</html>
+<!-- Learning DOM  FIRST DIAGRAM WHERE 
+        WINDOWS THEN >>> DOCUMENT>>HTML--HEAD--BODY --HEAD--META THEN FOR BODY--DIV --WHATEVER YOU WRITE   -->
+
+<!-- document.getElementbyId('idname') these Helps to target the Specific Elemnt -->
+<!-- now if we use the document.getElementbyid('idname').id these will give you the Id name -->
+<!-- .getAttribute() these also a Function Which Gives you the Values  -->
+
+While Accessing the TextText Inside the content We will be Using the three to
+four thing Inner-TEXT-GIVES THE TEXT INSIDE THE TAGS TEXT-CONTENT-- GIVES THE
+CONTENT WHERE THE DISPLAY MIGHT ALSO BE THE NONE inner-html-- IT GIVES ALL THE
+TAGS INCLUDNG THE TAGS ALSO ONE MORE THNG YOU CAN USE QUERYSELECTOR--SAME THING
+LIKE GETELEMSNT BY ID IN QUERY SELECTOR YOU CAN USE ALL THE SLECTORS THAT CAN BE
+USED IN CSS
+
+<!-- ONE MORE THING IS PRESENT THAT IS QuerySelectall() where you can Slect all the particular Elemsnt  -->>
+queryselectall will give you the List of the Node

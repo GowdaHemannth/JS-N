@@ -1,0 +1,41 @@
+<!-- Here we will be Learning About How To Create a new Element in DOM -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;color:white;">
+    <div class="parent">
+        <!-- Here You Might Thing That in the Nodelist we will get Only 4 Nodes -->
+         <!-- But After the Each Node we have used 'ENTER' It is Also Considered As the Node so here 9 Nodes  -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<!-- To Add Or get the Element So we need to get the  -->
+ <script>
+    const Parent=document.querySelector('.parent')
+    console.log(Parent)
+    // Can get the Child Elemsnt
+    // Since it is a Array We can get the Elesmnt by Accessing [0]
+    // console.log(Parent.children[1].innerHTML)
+    for(let i=0;i<Parent.children.length;i++){
+        console.log(Parent.children[i].innerHTML)
+    }
+    Parent.children[1].style.color='green'
+    const Dayone=document.querySelector('.day')
+    // Since Using these query selector will simply increase the 
+    // tree structure in the Thread Hence we use 
+    console.log(Dayone.parentElement);
+    // next Sibling Things
+    console.log(Dayone.nextElementSibling);
+
+    // node list 
+    
+    
+ </script>
+</html>
