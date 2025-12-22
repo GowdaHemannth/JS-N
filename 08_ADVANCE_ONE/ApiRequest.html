@@ -1,0 +1,69 @@
+<!-- Here the Main Intention of the API  get the API GOING  -->
+<!-- XML API ARE BEST IN RECENT TIMES  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST-API</title>
+
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    .image{
+        height: 180px;
+        width: 200px;
+    }
+    .button{
+        margin-top: 300px;
+    }
+      /* State	Name	Meaning
+0	UNSENT	Request created, open() not called
+1	OPENED	open() called, request ready
+2	HEADERS_RECEIVED	Request sent, headers received
+3	LOADING	Data is coming (partial data)
+4	DONE	Request complete, response received */
+    </style>
+  </head>
+  <body>
+    <!-- Here we will be Mentioning the Github Name -->
+   
+      <button class="button">PROFILE-PICTURE</button>
+      
+      <img src="" class="image" />
+      <h1><b></b></h1>
+
+  </body>
+  <script>
+    const SuperMan = new XMLHttpRequest();
+    const URL = "https://api.github.com/users/GowdaHemannth";
+    SuperMan.open("GET", URL);
+    SuperMan.onreadystatechange = function () {
+      //     //  State	Name	Meaning
+      // 0	UNSENT	Request created, open() not called
+      // 1	OPENED	open() called, request ready
+      // 2	HEADERS_RECEIVED	Request sent, headers received
+      // 3	LOADING	Data is coming (partial data)
+      // 4	DONE	Request complete, response received
+      console.log(SuperMan.readyState);
+      if (SuperMan.readyState === 4) {
+        // Here you will get To know How to Convert the Data into Jason
+        const Data = JSON.parse(this.responseText);
+        console.log(Data);
+        const M = document.querySelector(".body");
+        const h = document.getElementsByTagName("h1");
+        document
+          .querySelector(".button")
+          .addEventListener("click", function () {
+            console.log(Data.avatar_url);
+            document.querySelector("img").src = Data.avatar_url;
+            document.querySelector("h1").innerText = Data.name;
+          });
+      }
+    };
+
+    SuperMan.send();
+  </script>
+</html>

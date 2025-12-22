@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASYNC FUNCTION-TIMESTAMP-FUNCTIONS </title>
+</head>
+<body>
+    <h1>SYNC FUNCTION-TIMESTAMP-FUNCTIONS</h1>
+    <button class="stop">Stop</button>
+</body>
+<script>
+    // Here we will be Learning About TimeOut Function 
+    const sayHitesh=function(){
+        console.log("Hii Everybody")
+    }
+    const func=function(){
+        document.querySelector('h1').innerHTML='SPIDER-MAN'
+    }
+   const C= setTimeout(func,2000)
+    // differnce between set timeout-and Set-TimeInterval
+    // in set timeout we will be delaying things but it will be done once
+    // where as in timeinterval after time interval these will go on forever -->>>>
+    // Here As i have Mentioned ot have setTimeout then i will also have 
+    // CLEARTIMEOUT HERE IT WILL CLEAR ALL THE SET TIMEOUT THINGS THAT HA[PPENS IN SET TMEOUT]
+    document.querySelector('.stop').addEventListener('click',function(){
+        clearTimeout(C)
+        console.log('Changes will not occur ')
+    }) 
+</script>
+</html>

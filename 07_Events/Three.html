@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET-INTERVAL-END INTERVAL</title>
+</head>
+<body>
+    <button class="Start">Start-The-Interval</button>
+    <button class="End">Stop-The-Interval</button>
+
+      
+</body>
+<!-- Function How to-START THE SET INTERVAL AND STOP THE INTERVAL -->
+<script>
+    let H;
+   let randomColor= function(){
+    let c='#';
+    const Hexa='0123456789ABCDEF'
+    for(let i=0;i<6;i++){
+        c+=Hexa[Math.floor(Math.random()*16)];
+    }
+    return c;
+   }
+     function func(){
+       document.querySelector('body').style.backgroundColor=randomColor()
+     }
+
+    document.querySelector('.Start').addEventListener('click',function(){
+       H= setInterval(func,2000)
+    })
+
+    // IF YOU WANT ADD CERTAIN MESSGES AFTER THE COLOR STOPS HERE YOU GO 
+    const j=document.createElement('h2');
+    j.innerText='COLORS-HAS BEEN STPOTED'
+     function TwoFunc(){
+        let M=document.querySelector('body')
+        M.style.backgroundColor='red'
+        M.appendChild(j)
+        
+     }
+
+    document.querySelector('.End').addEventListener('click',function(){
+        clearInterval(H);
+        TwoFunc()
+    })
+   
+</script>
+</html>
