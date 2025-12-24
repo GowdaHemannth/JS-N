@@ -36,6 +36,7 @@
 // });
 
 // Here Promise Will be of Both Resolve and Reject
+
 const CaptainAmerica = new Promise(function (resolve, reject) {
   setTimeout(function () {
     let error = true;
@@ -106,11 +107,25 @@ async function PromiseFive(){
 //   }
 // }
 
+/// Here we might be Thinking that we are not able to Pass any thing inside them but thats not true 
+// you Can Pass Anything You Want 
+// If You Use Fetch then that Means That will Execute First Later Rest of them Executes 
+// That Means in Memory frtch will be Having Seperate Queue for the Working Execution 
 fetch("https://api.github.com/users/GowdaHemannth")
 .then(function(response){
- return response.json
+ return response.json()
 })
 .catch(function(err){
 console.log("Some Eroro ");
 
 })
+
+// HERE THERE WILL BE TWO SCREENSHOTS OF THESE FETCH WORKS 
+// WE ALL KNOW THAT IF WE CALL ANY FUNCTION FIRST NEED TO WAIT IN QUEUE THEN IT WILL PASSED TO EXECUATION STACK 
+// BUT WE HAVE TO KNOW THAT FETCH HAS A VERY UNIQE TYPE WHERE IT WILL GET VIP QUEUES TO GET THERE JOB DONE T FIRST 
+// FETCH WILL GIVE REULTS ON IN REJECTS WHERE THERE IS NEYWORK BREACHS ONLY THAT SORT OF ERORS 
+// OTHER THAN THAT IF THING LIKE USER NOT FOUND AND VARIBLE THING IT WILL BE RESULTED IN RESOLVE THING ONLY 
+
+// SINCE FETH IS PROMISE ITSEF 
+// IT NEED TO DO TWO TASKS FIRST  FIRST ONE IS PROMISE IT NEED TO RETURN REOLVE OR REJECT
+// AND IT NEED TO SEND REQUEST GET THE RESPONSE IN THE BROWERS ALSOO THAT IS ALSO DESRIBED IN THE SCREENSHOTS 
