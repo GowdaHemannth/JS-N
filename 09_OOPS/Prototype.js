@@ -78,3 +78,5 @@ String.prototype.truelength=function(){
 }
 anotherName.truelength()
 "Hemanth".truelength()
+
+// think you have one function under one function 
