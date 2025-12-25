@@ -6,7 +6,7 @@
 
 arr
  ↓
-Array.prototype
+Array.prototype  You Can see All these in a Browser Seetings 
  ↓
 Object.prototype
  ↓
@@ -16,3 +16,6 @@ null
  # We Can say that Function is Function also it it is Object also 
 # Like 90 % of are Object execpt Strings 
  # Everything in a Javascript is A Objectt And tthat object is itself can prototype object where it finds prototype
+    Arrray
+    |
+     
