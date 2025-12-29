@@ -4,7 +4,8 @@
 // to avoid in those situation we use IMMEDIATLEY INVOKED FUNCTIONS 
 
 (FUNK=()=>{
-     const x=10;
+     const x=10; // here has we defides the x the value oof these will be 10 only if you acces it inside or else it will be 
+     //
      console.log(x); 
 })
 FUNK()

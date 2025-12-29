@@ -23,19 +23,20 @@ const objetcs={
 
 //How to add the Function inside the Objects
 objetcs.greeting=function(){
-    console.log("Hello Greeting")
+    // console.log("Hello Greeting")
 }
 
 //How to Use Any objects Parameter in Function
+// Here i am Adding Properties to the Objects 
 objetcs.parameter=function(){
-    console.log(`Hello Js User ${this.name}`) // here in place of these you can use Objects since here we are refering to the single user hence we wil uisng that 
+    // console.log(`Hello Js User ${this.name}`) // here in place of these you can use Objects since here we are refering to the single user hence we wil uisng that 
 
 }
 
-console.log(objetcs.greeting()); //here if i Use Only Greeting than it will throw Error 
-console.log(objetcs.parameter());
-console.log(objetcs.age)
-console.log(objetcs["email"])
+// console.log(objetcs.greeting()); //here if i Use Only Greeting than it will throw Error 
+// console.log(objetcs.parameter());
+// console.log(objetcs.age)
+// console.log(objetcs["email"])
 
 // Single to objects 
 //---> Defing a Single ton Object 
@@ -53,13 +54,16 @@ const TinderUser={
 }
 
 // --->> How to Use Nested Objects 
-console.log(TinderUser.userFullname.fullname.firstname);
+// console.log(TinderUser.userFullname.fullname.firstname);
 
 // How to Add Multiple Objects 
 const obj1={1:'a',2:'b'}
 const obj2={3:'a',4:'b'}
+//   Here These Assign will be Used to Spread the values then add it into the Single Object
+// First It will be Assigned to Empty Object 
+// then object1 will be Copied ,then object2 
 
-const obj3=Object.assign({},obj1,obj2) // Here the Empty Paranthesis is Optioanl You Can use or Ignore it 
+const obj3=Object.assign({},obj1,obj2) 
 
 console.log(obj3)
 

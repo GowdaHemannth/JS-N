@@ -1,4 +1,5 @@
 // Here we will be Learning How to Change the Vallue of the Constant Thing like Pi and Etc
+// This Will be Godd 
 const des=Object.getOwnPropertyDescriptor(Math,'random')
 // Here i the consle log or in Output You Can see Thatin writable it shows Not editable ,, So Has in You Can See that like thsee even we can do thee to our Object 
 console.log((des));

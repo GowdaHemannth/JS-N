@@ -6,7 +6,9 @@ function SayMyname(){
 
 //-->> HERE IF WE WRITE just SayMyname then its just the function's Refernce 
 // -->> But if we write SayMyname()-- then its Function Will work 
+
 // writitng FUNCTION BEFORE DEFINING THE FUNCTION IS MANDOTRY
+
 // the values which we pass in while defing the function is known as Parameter 
 // Values which we pass while calling the Function is Called as Arguments 
 
@@ -15,7 +17,7 @@ function loggedInMessege(username){
 }
 const result=loggedInMessege("Hmenath")
 console.log(result)
-// Here Sometimes Inside the LoggedInMessege Name will not be nters so in that Cases 
+// Here Sometimes Inside the LoggedInMessege Name will not be Enters so in that Cases 
 // we will get undefined when print it 
 // Hence in the Function while Writting add if username==undefined then print PLese Enter the Username 
 
@@ -28,6 +30,8 @@ function Calculate(num1){ /// Here it will return only the one num1 Value so sor
 }
 
 // but if you want to return multiple argumnets 
+// here as you know once the function defined only the  Mentioned ARGUMents we need to pass but has
+// here we can pass as many possible 
 function Calculate(...num1){ /// Here it will return as many arguments you pass  
  return num1
 }
