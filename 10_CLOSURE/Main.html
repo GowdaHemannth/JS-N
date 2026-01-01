@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="b1">Button1</button>
+        <button class="b2">Button2</button>
+    
+
+</body>
+<script>
+// Here we will be Seeing How does the Closure Actually Works 
+document.querySelector('.b1').onclick=Change('red')
+
+
+// 
+document.querySelector('.b2').onclick=Change('green')
+
+
+// As above you can see where for Two buttons I Created two DifferntFunctionJsut Add the Functionality to it 
+// Hence 
+// will crate in function
+function Change(color){
+      return function (){
+         document.body.style.backgroundColor=`${color}`
+
+      }
+}
+
+
+/// Here Comes Actual Concetpt Of Closure 
+ // As you can see How the Before clicking onlt=y function excuting here 
+ // There are Two reasons For 
+ // 1St One is Clikbale one takes function refernces 
+ // 2ns here we are assigin a function 
+ // so we need to add return statemsnt to it 
+</script>
+</html>
