@@ -2,7 +2,7 @@ console.log("Hello");
 /* 
 Here we are Learning about the Daatype s
 like 
-const 1 =10;
+const l =10;
 let name ='john';
 let number=20.5;
 if your Building something where the thing is keep on getting changing than us The Let keyword only if you think like accountnumber where it is const so use const 

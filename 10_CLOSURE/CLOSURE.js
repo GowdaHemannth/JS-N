@@ -1,7 +1,7 @@
 // Here we will be Learning About the Closure and Lexical Scopping 
 function Username(){
   let UserName='Hemanth-Gowda'
-
+ 
   function Inner(){
     // Here i could use the Username 
     console.log(UserName)
