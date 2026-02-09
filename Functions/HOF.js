@@ -4,7 +4,7 @@ function area(shape,l,b){
 }
 
 function Triangle(l,b){
-    return 0.5 *l*b
+    return 0.5 *l*b  
 
 }
 function rectangle(l,b){
@@ -13,7 +13,7 @@ function rectangle(l,b){
 console.log(area(Triangle,10,20));
 
 
-// 
+//   
 function Circle(Type,r){
     return Type(r)
 }
