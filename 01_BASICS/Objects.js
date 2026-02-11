@@ -13,6 +13,7 @@ const objetcs={
     [sym]:'key1',
     email:'hemantha@gmail.com',
     location:'Jaipur'
+    
 }
 // how to Change the Value of theObjects 
 // objects.email='somevalue';
