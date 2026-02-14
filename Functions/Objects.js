@@ -174,6 +174,8 @@ let User1={
 
 
 // Delete The Object 
+
+
 // delete User1.Job
 // console.log(User1);
 
@@ -223,7 +225,50 @@ console.log(Math.trunc(9.9999));
 
 
 //abs
+console.log(Math.abs(10-1000));
 
 
 
+// Sign Method 
+//  1 FOR POSITIVE -1 FOR NEGATIVE
+let Positive=-234  
+console.log(Math.sign(Positive));
+
+
+// pOW
+console.log(Math.pow(2,4));
+
+
+// Sqrt Vlaue 
+console.log(Math.sqrt(267));
+
+// Cube Root
+console.log(Math.cbrt(27));
+
+
+
+// random number 
+console.log(Math.trunc((Math.random()*100+900)));
+
+// 900 to 1000
+console.log(Math.trunc((Math.random()*100+100)));
+
+let arr=["JPDumminy","ABD","VIRAT"]
+let [,,c1]=arr
+console.log(c1);
+
+
+let[a,s,d,p]=[11,22,33,343]
+console.log(a);
+
+// console.log((Math.random())*100);
+let A1=20
+let B1=30
+let [B2,A2]=[A1,B1]
+console.log(B1);
+
+let A3=[10,20,30,40,50,60]
+
+let[num1,num2,num3,num4,num5,num6,num7=90]=A3
+console.log(num7);
 
