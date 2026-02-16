@@ -272,3 +272,13 @@ let A3=[10,20,30,40,50,60]
 let[num1,num2,num3,num4,num5,num6,num7=90]=A3
 console.log(num7);
 
+//  Date Time Function 
+let myDate=new Date()
+console.log(myDate);
+console.log(myDate.toLocaleDateString());
+
+let N=Date.now()
+console.log(N);
+
+
+

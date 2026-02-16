@@ -4,6 +4,7 @@
 // // Pending	Waiting
 // // Fulfilled	Success
 // // Rejected	Failed
+
 // // Without the Promise Javascript Will Crash
 // const promiseOne = new Promise(function (resolve, reject) {
 //   // Do an Async Task
