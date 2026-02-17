@@ -1,284 +1,305 @@
-let Data={
-    "First name":"Manoj SiddanaGowda Patil",
-    age:"23",
-    college:"Gat",
-    per:"99",
-    married:"false",
-    3:'lucky'   
-}
-// console.log(Data["First name"]);
-// console.log(Data['age']);
+// let Data={
+//     "First name":"Manoj SiddanaGowda Patil",
+//     age:"23",
+//     college:"Gat",
+//     per:"99",
+//     married:"false",
+//     3:'lucky'   
+// }
+// // console.log(Data["First name"]);
+// // console.log(Data['age']);
 
 
-// creat 6 Differnt Object Should Consists of 10 Properties 
-let bestfriend = {
-    "first name": 'Manoj venkanagowda Siddanagowda Patil',
-    age: 22,
-    College: 'Global Academy of Tecjnology',
-    Location: 'Bengalore',
-    gender: 'Female',
-    3: 'luckey'
-}
-// console.log(bestfriend);]
+// // creat 6 Differnt Object Should Consists of 10 Properties 
+// let bestfriend = {
+//     "first name": 'Manoj venkanagowda Siddanagowda Patil',
+//     age: 22,
+//     College: 'Global Academy of Tecjnology',
+//     Location: 'Bengalore',
+//     gender: 'Female',
+//     3: 'luckey'
+// }
+// // console.log(bestfriend);]
 
-// create a 6 different user object which atleast should consist of 10 properties
+// // create a 6 different user object which atleast should consist of 10 properties
 
 
-let abhi = [
-    {
-        name: "Ramesh",
-        age: 25,
-        gender: "male",
-        city: "Bangalore",
-        phno: "9876543210",
-        salary: 40000,
-        email: "ramesh@gmail.com",
-        company: "Infosys",
-        experience: 2,
-        fatherName: "Suresh"
-    },
-    {
-        name: "suresh",
-        age: 23,
-        gender: "male",
-        city: "Mysore",
-        phno: "9123456780",
-        salary: 35000,
-        email: "suresh@gmail.com",
-        company: "Wipro",
-        experience: 1,
-        fatherName: "Raghav"
-    },
-    {
-        name: "Kiran",
-        age: 28,
-        gender: "male",
-        city: "Hubli",
-        phno: "9012345678",
-        salary: 50000,
-        email: "kiran@gmail.com",
-        company: "TCS",
-        experience: 4,
-        fatherName: "Mahesh"
-    },
-    {
-        name: "faheed",
-        age: 26,
-        gender: "male",
-        city: "Dharwad",
-        phno: "9988776655",
-        salary: 42000,
-        email: "faheed@gmail.com",
-        company: "Capgemini",
-        experience: 3,
-        fatherName: "Ramesh"
-    },
-    {
-        name: "Arjun",
-        age: 24,
-        gender: "male",
-        city: "Belgaum",
-        phno: "9090909090",
-        salary: 38000,
-        email: "arjun@gmail.com",
-        company: "HCL",
-        experience: 2,
-        fatherName: "Kumar"
-    },
-    {
-        name: "Abhiu",
-        age: 27,
-        gender: "male",
-        city: "Mangalore",
-        phno: "9345678123",
-        salary: 47000,
-        email: "abhi@gmail.com",
-        company: "IBM",
-        experience: 4,
-        fatherName: "Ravi"
-    },
-    {
-        name: "Rahul",
-        age: 29,
-        gender: "male",
-        city: "Shimoga",
-        phno: "9887766554",
-        salary: 55000,
-        email: "rahul@gmail.com",
-        company: "Accenture",
-        experience: 5,
-        fatherName: "Shankar"
-    },
-    {
-        name: "Yaha",
-        age: 22,
-        gender: "male",
-        city: "Tumkur",
-        phno: "9776655443",
-        salary: 32000,
-        email: "yaha@gmail.com",
-        company: "Tech Mahindra",
-        experience: 1,
-        fatherName: "Manjunath"
-    },
-    {
-        name: "Vijay",
-        age: 30,
-        gender: "male",
-        city: "Bijapur",
-        phno: "9665544332",
-        salary: 60000,
-        email: "vijay@gmail.com",
-        company: "Oracle",
-        experience: 6,
-        fatherName: "Prakash"
-    },
-    {
-        name: "sachin",
-        age: 24,
-        gender: "male",
-        city: "Udupi",
-        phno: "9554433221",
-        salary: 39000,
-        email: "sachin@gmail.com",
-        company: "Cognizant",
-        experience: 2,
-        fatherName: "Rajesh"
-    }
-];
+// let abhi = [
+//     {
+//         name: "Ramesh",
+//         age: 25,
+//         gender: "male",
+//         city: "Bangalore",
+//         phno: "9876543210",
+//         salary: 40000,
+//         email: "ramesh@gmail.com",
+//         company: "Infosys",
+//         experience: 2,
+//         fatherName: "Suresh"
+//     },
+//     {
+//         name: "suresh",
+//         age: 23,
+//         gender: "male",
+//         city: "Mysore",
+//         phno: "9123456780",
+//         salary: 35000,
+//         email: "suresh@gmail.com",
+//         company: "Wipro",
+//         experience: 1,
+//         fatherName: "Raghav"
+//     },
+//     {
+//         name: "Kiran",
+//         age: 28,
+//         gender: "male",
+//         city: "Hubli",
+//         phno: "9012345678",
+//         salary: 50000,
+//         email: "kiran@gmail.com",
+//         company: "TCS",
+//         experience: 4,
+//         fatherName: "Mahesh"
+//     },
+//     {
+//         name: "faheed",
+//         age: 26,
+//         gender: "male",
+//         city: "Dharwad",
+//         phno: "9988776655",
+//         salary: 42000,
+//         email: "faheed@gmail.com",
+//         company: "Capgemini",
+//         experience: 3,
+//         fatherName: "Ramesh"
+//     },
+//     {
+//         name: "Arjun",
+//         age: 24,
+//         gender: "male",
+//         city: "Belgaum",
+//         phno: "9090909090",
+//         salary: 38000,
+//         email: "arjun@gmail.com",
+//         company: "HCL",
+//         experience: 2,
+//         fatherName: "Kumar"
+//     },
+//     {
+//         name: "Abhiu",
+//         age: 27,
+//         gender: "male",
+//         city: "Mangalore",
+//         phno: "9345678123",
+//         salary: 47000,
+//         email: "abhi@gmail.com",
+//         company: "IBM",
+//         experience: 4,
+//         fatherName: "Ravi"
+//     },
+//     {
+//         name: "Rahul",
+//         age: 29,
+//         gender: "male",
+//         city: "Shimoga",
+//         phno: "9887766554",
+//         salary: 55000,
+//         email: "rahul@gmail.com",
+//         company: "Accenture",
+//         experience: 5,
+//         fatherName: "Shankar"
+//     },
+//     {
+//         name: "Yaha",
+//         age: 22,
+//         gender: "male",
+//         city: "Tumkur",
+//         phno: "9776655443",
+//         salary: 32000,
+//         email: "yaha@gmail.com",
+//         company: "Tech Mahindra",
+//         experience: 1,
+//         fatherName: "Manjunath"
+//     },
+//     {
+//         name: "Vijay",
+//         age: 30,
+//         gender: "male",
+//         city: "Bijapur",
+//         phno: "9665544332",
+//         salary: 60000,
+//         email: "vijay@gmail.com",
+//         company: "Oracle",
+//         experience: 6,
+//         fatherName: "Prakash"
+//     },
+//     {
+//         name: "sachin",
+//         age: 24,
+//         gender: "male",
+//         city: "Udupi",
+//         phno: "9554433221",
+//         salary: 39000,
+//         email: "sachin@gmail.com",
+//         company: "Cognizant",
+//         experience: 2,
+//         fatherName: "Rajesh"
+//     }
+// ];
 
-// Functions
-let User1={
-    name:"Hemanth",
-    age:"24",
-    Job:()=>{
-        console.log("I am Unemployed");
+// // Functions
+// let User1={
+//     name:"Hemanth",
+//     age:"24",
+//     Job:()=>{
+//         console.log("I am Unemployed");
         
-    },
-    Address:{
-        state:"Karnataka",
-        city:"Bengaluru",
-        pinCode:"78609"
+//     },
+//     Address:{
+//         state:"Karnataka",
+//         city:"Bengaluru",
+//         pinCode:"78609"
         
-    }
+//     }
 
     
-}
+// }
     
-// console.log(Object.values(User1));
-// console.log(Object.entries(User1));
+// // console.log(Object.values(User1));
+// // console.log(Object.entries(User1));
+// // Object.freeze(User1)
+
+// // User1.name="Abhishek"
+// // console.log(User1.name);
+
+
+// // Delete The Object 
+
+
+// // delete User1.Job
+// // console.log(User1);
+
+
+// // Assign methods Object 
+// // it Accepts Two Things One is Target One Is Source
+// const dummy={
+//     Palyer:"KL Rahul"
+// }
+// const dummy2={
+//     Palyer2:'ViartKohli'
+// }
+// console.log(Object.assign({},dummy,dummy2,User1));
+
 // Object.freeze(User1)
+// delete User1.name
+// console.log(User1.name);
 
-// User1.name="Abhishek"
+// // When Its Come to Seal Wecan Update the Things But we can not Delete the Object
+// // THe dIFFEERNCE IS CLear We can not UPdate in Freeze but we can in Seal
+// Object.seal(User1)
+// User1.name=""
 // console.log(User1.name);
 
 
-// Delete The Object 
-
-
-// delete User1.Job
-// console.log(User1);
-
-
-// Assign methods Object 
-// it Accepts Two Things One is Target One Is Source
-const dummy={
-    Palyer:"KL Rahul"
-}
-const dummy2={
-    Palyer2:'ViartKohli'
-}
-console.log(Object.assign({},dummy,dummy2,User1));
-
-Object.freeze(User1)
-delete User1.name
-console.log(User1.name);
-
-// When Its Come to Seal Wecan Update the Things But we can not Delete the Object
-// THe dIFFEERNCE IS CLear We can not UPdate in Freeze but we can in Seal
-Object.seal(User1)
-User1.name=""
-console.log(User1.name);
-
-
-// Object.f=function(){
-//     console.log("hii");
+// // Object.f=function(){
+// //     console.log("hii");
     
-// }
-// console.log(User1.f());
+// // }
+// // console.log(User1.f());
 
 
 
 
 
 
-// abhi.map((Hemanth)=>{
-//     console.log(Hemanth);
+// // abhi.map((Hemanth)=>{
+// //     console.log(Hemanth);
     
-// })
-let num=-9.1
-console.log(Math.floor(num));
+// // })
+// let num=-9.1
+// console.log(Math.floor(num));
 
-console.log(Math.max);
-console.log(Math.round(-9.9));
-console.log(Math.trunc(9.9999));
-
-
-//abs
-console.log(Math.abs(10-1000));
+// console.log(Math.max);
+// console.log(Math.round(-9.9));
+// console.log(Math.trunc(9.9999));
 
 
-
-// Sign Method 
-//  1 FOR POSITIVE -1 FOR NEGATIVE
-let Positive=-234  
-console.log(Math.sign(Positive));
-
-
-// pOW
-console.log(Math.pow(2,4));
-
-
-// Sqrt Vlaue 
-console.log(Math.sqrt(267));
-
-// Cube Root
-console.log(Math.cbrt(27));
+// //abs
+// console.log(Math.abs(10-1000));
 
 
 
-// random number 
-console.log(Math.trunc((Math.random()*100+900)));
-
-// 900 to 1000
-console.log(Math.trunc((Math.random()*100+100)));
-
-let arr=["JPDumminy","ABD","VIRAT"]
-let [,,c1]=arr
-console.log(c1);
+// // Sign Method 
+// //  1 FOR POSITIVE -1 FOR NEGATIVE
+// let Positive=-234  
+// console.log(Math.sign(Positive));
 
 
-let[a,s,d,p]=[11,22,33,343]
-console.log(a);
+// // pOW
+// console.log(Math.pow(2,4));
 
-// console.log((Math.random())*100);
-let A1=20
-let B1=30
-let [B2,A2]=[A1,B1]
-console.log(B1);
 
-let A3=[10,20,30,40,50,60]
+// // Sqrt Vlaue 
+// console.log(Math.sqrt(267));
 
-let[num1,num2,num3,num4,num5,num6,num7=90]=A3
-console.log(num7);
+// // Cube Root
+// console.log(Math.cbrt(27));
 
-//  Date Time Function 
+
+
+// // random number 
+// console.log(Math.trunc((Math.random()*100+900)));
+
+// // 900 to 1000
+// console.log(Math.trunc((Math.random()*100+100)));
+
+// let arr=["JPDumminy","ABD","VIRAT"]
+// let [,,c1]=arr
+// console.log(c1);
+
+
+// let[a,s,d,p]=[11,22,33,343]
+// console.log(a);
+
+// // console.log((Math.random())*100);
+// let A1=20
+// let B1=30
+// let [B2,A2]=[A1,B1]
+// console.log(B1);
+
+// let A3=[10,20,30,40,50,60]
+
+// let[num1,num2,num3,num4,num5,num6,num7=90]=A3
+// console.log(num7);
+
+//  Date Time Function
+// Inside The Date Function We should give in Integer if we give in String then  we can give in 0 ALSO 
 let myDate=new Date()
-console.log(myDate);
-console.log(myDate.toLocaleDateString());
+// console.log(myDate);
+// Date will be in Local Thing
+// console.log(myDate.toLocaleDateString());
 
-let N=Date.now()
-console.log(N);
+// let N=Date.now()
+// console.log(N);
+
+// Getter Method Here Will get Evrything will get Like Day,Date,Hours,MilliSeconds
+console.log(myDate.getDate());
+// console.log(myDate.getMonth()); 
+// console.log(myDate.getMinutes());
+
+//  Setting The Date
+  
+console.log(myDate.setFullYear(2030));
+console.log(myDate.getFullYear());
+
+
+
+
+
+
+
+
+
 
 
 
