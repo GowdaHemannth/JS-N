@@ -6,7 +6,13 @@
     <title>Document</title>
   </head>
   <body>
+    <h1 id ="Slogger">Abhishek-Sharma</h1>
+<!--   
+      <h1 class="Rocky">hii</h1>
+      <h2 class="Rocky">BYEE</h2> -->
+   
 
+      <!--  Here tag Name Also returns The tag Name -->
   </body>
   <script>
     // // location.href = "https://www.google.com";
@@ -16,16 +22,36 @@
     // },3000)
     // localStorage.setItem("name","manoj")
     // // localStorage.removeItem("name")
-    
 
-    // Session Storage Helps Yiy keep Data 
-    sessionStorage.setItem("name","Abhi")
+    // Session Storage Helps Yiy keep Data
+    //   sessionStorage.setItem("name","Abhi")
 
-    //  Use Case After Calling The Database instaed of Calling it Again ANd Agin we can call once and Store it and Use it
-    // let data=sessionStorage.getItem("name")
-    // console.log(data);
-    
-   sessionStorage.removeItem("name")
+    //   //  Use Case After Calling The Database instaed of Calling it Again ANd Agin we can call once and Store it and Use it
+    //   // let data=sessionStorage.getItem("name")
+    //   // console.log(data);
+
+    //  sessionStorage.removeItem("name")
+
+    // let Data=document.getElementById("Slogger")
+    // console.log(Data);
+    // let Data1 = document.getElementsByClassName("Rocky");
+    // for (let i = 0; i < Data1.length; i++) {
+    //   let Data2 = Data1[i].textContent;
+    //   console.log(Data2);
+    // }
+
+
+    //  Important thing About Query Selector is Even Though You Have Collection its Matches the First Element
+    //  By using the Selector Symbols YOU Can Use These
+
+
+    //  IN Query SelectorAll its All so Gives Collection But It Actually Not A Collection
+
+
+    //  DOm Manipulation
+   let Data= document.getElementById("Slogger")
+  //  Data.innerHTML="<h1>Abhishek-Sharma is Not A Slogger</h1>"
+
+  Data.innerText="Capatin Here"
   </script>
 </html>
-
