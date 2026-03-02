@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="Lit"><li id="Di">hey There</li></ul>
+    
+    <button id="boss1">Hii There</button>
+  </body>
+  <script>
+    // function handleSubmit(){
+    //   document.body.style.backgroundColor='red'
+
+    // }
+    // let data = document.getElementById("boss");
+    let data1 = document.getElementById("boss1");
+    data1.addEventListener("click", () => {
+      let List = document.createElement("li");
+      List.textContent = "Hey EvryBisy";
+      document.getElementById("Lit").append(List);
+    });
+
+    // data1.addEventListener("click", () => {
+    //   document.body.style.backgroundColor = "black";
+    // });
+  </script>
+</html>
