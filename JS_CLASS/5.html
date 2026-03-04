@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label for="name">Name</label>
+        <input type="text" placeholder="name" ><br>
+        <label for="email">Email</label>
+        <input type="email" placeholder="email"><br>
+        <button>Submit</button>
+    </form>
+    <script>
+    let form = document.getElementById('form')
+    
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let text =document.getElementsByTagName('input')[0].value;
+    let email =document.getElementsByTagName('input')[1].value;
+    if(text.length <= 3 || text.length > 10) {
+        console.log("Name should be more than 3 and less than 10 letter");
+        return;
+    }
+    console.log(text);
+    console.log(email);
+})
+</script>
+</body>
+</html>

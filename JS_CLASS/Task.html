@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      /* #Button{
+        background-color: black;
+      } */
+       body{
+        background-color: black;
+       }
+    </style>
   </head>
   <body>
     <button id="Button">LightMode</button>
@@ -17,13 +25,13 @@
         
         console.log(Data.textContent);
 
-        document.body.style.backgroundColor = "black";
+        document.body.style.backgroundColor = "white";
         Data.textContent= "DarkMode";
       }
      else if (Data.textContent === "DarkMode") {
         Data.textContent = "LightMode";
         console.log(Data.textContent);
-        document.body.style.backgroundColor = "white";
+        document.body.style.backgroundColor = "black";
       }
     });
   </script>
