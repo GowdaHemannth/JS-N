@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+
+  <body>
+    <!-- <header -->
+    <header>
+      <nav>
+        <section class="navLeft">
+          <h1>Logoo</h1>
+        </section>
+
+        <section class="navRight">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <!-- <li><a href="">Contact</a></li>
+                    <li><a href="">Profile</a></li> -->
+            <button id="button">Login</button>
+            <button id="button">Sign-Up</button>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      
+    </main>
+
+    <footer></footer>
+  </body>
+  <script>
+    async function FetchingData() {
+      let data = await fetch("https://fakestoreapi.com/products");
+      let finalData = await data.json();
+
+      let main = document.getElementsByTagName("main")[0];
+
+      finalData.map((items) => {
+        let Card = document.createElement("div");
+        Card.className = "card";
+
+        Card.innerHTML = `<img src=${items.image} />
+                          <p>${items.title}</p>`;
+        console.log(Card);
+
+        main.appendChild(Card);
+      });
+    }
+    FetchingData();
+  </script>
+</html>

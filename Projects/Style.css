@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: white; */
+    /* color: black; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(45, 2, 2);
+    padding: 15px 40px;
+
+}
+
+.navLeft h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.navRight ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navRight ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navRight button{
+   margin :0px;
+   width: 80px;
+   height: 30px;
+   border-radius: 6px;
+   outline: none;
+   /* border-style: none; */
+   background-color: black;
+   color: white;
+   transition: all 0.1;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transform: scale(1);
+
+
+}
+.card{
+    display: flex;
+}
