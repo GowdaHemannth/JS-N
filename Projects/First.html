@@ -28,9 +28,7 @@
       </nav>
     </header>
 
-    <main>
-      
-    </main>
+    <main ></main>
 
     <footer></footer>
   </body>
@@ -46,7 +44,8 @@
         Card.className = "card";
 
         Card.innerHTML = `<img src=${items.image} />
-                          <p>${items.title}</p>`;
+                          <p>${items.title}</p>
+                          <h1>Price:$${items.price}</h1>`;
         console.log(Card);
 
         main.appendChild(Card);

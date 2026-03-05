@@ -10,7 +10,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(45, 2, 2);
+     background-color:#4C1D95;
     padding: 15px 40px;
 
 }
@@ -30,6 +30,7 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    /* padding-left: 50px; */
 }
 
 .navRight button{
@@ -38,10 +39,12 @@ nav {
    height: 30px;
    border-radius: 6px;
    outline: none;
-   /* border-style: none; */
-   background-color: black;
+   border-style: none;
+  background-color:#7C3AED;
+
    color: white;
    transition: all 0.1;
+   justify-content: center;
 
 }
 button:hover{
@@ -52,6 +55,45 @@ button:hover{
 
 
 }
-.card{
+main{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: content;
+    background-color:white;
+    gap: 50px;
+    padding:20px
+}
+.card{
+    background-color:#F8FAFC;
+    color:#1E293B;
+    width: 250px;
+    padding: 15px;
+    border: 2px solid  black;
+    border-radius: 30px;
+  
+
+}
+.card img{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 20px;
+}
+.card p{
+    text-shadow: 2px;
+    font-size: 15px;
+}
+.card:hover{
+    transform: scale(1);
+    background-color: antiquewhite;
+   height: 20px;
+    
+    cursor:pointer;
+    
+}
+/*  */
+.card h1{
+    margin-top: 10px;
+    /* margin-left: 20px; */
+    text-shadow: 2px;
+    font-size: 15px;
 }
