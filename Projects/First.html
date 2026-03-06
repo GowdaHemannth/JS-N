@@ -18,9 +18,9 @@
         <section class="navRight">
           <ul>
             <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <!-- <li><a href="">Contact</a></li>
-                    <li><a href="">Profile</a></li> -->
+            <li id="contact"><a href="#footer">Contact</a></li>
+            <li><a href="/Projects/About.html">About</a></li>
+                    <li><a href="">Profile</a></li>
             <button id="button">Login</button>
             <button id="button">Sign-Up</button>
           </ul>
@@ -29,8 +29,20 @@
     </header>
 
     <main ></main>
-
-    <footer></footer>
+<footer id="footer">
+      <ul>
+        <li>Help</li>
+        <li>Status</li>
+        <li>About</li>
+        <li>Carrer</li>
+        <li>Email</li>
+        <li>Blog</li>
+        <li>Privacy</li>
+        <li>Contact</li>
+        <li>Terms</li>
+        <li>Text to speech</li>
+      </ul>
+    </footer>
   </body>
   <script>
     async function FetchingData() {
@@ -43,14 +55,27 @@
         let Card = document.createElement("div");
         Card.className = "card";
 
-        Card.innerHTML = `<img src=${items.image} />
-                          <p>${items.title}</p>
-                          <h1>Price:$${items.price}</h1>`;
-        console.log(Card);
+        Card.innerHTML = `<u><img src=${items.image} /></u>
+                          <p>${items.title.slice(0,10)}</p>
+                          <h1>Price:$${items.price}</h1>
+                           <button class='button1'>AddToCart</button>  `;
+       
 
         main.appendChild(Card);
+         console.log(Card);
+        let BuutonData=Card.getElementsByClassName('button1')[0]
+        BuutonData.addEventListener('click',()=>{
+             console.log(items);
+             
+          
+        })
+
       });
     }
     FetchingData();
+   
+
+    
+
   </script>
 </html>

@@ -1,99 +1,131 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* background-color: white; */
-    /* color: black; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: white; */
+  /* color: black; */
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-     background-color:#4C1D95;
-    padding: 15px 40px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, white, black);
+  padding: 15px 40px;
 }
 
 .navLeft h1 {
-    color: white;
-    font-size: 24px;
+  color: white;
+  font-size: 24px;
 }
 
 .navRight ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
+  display: flex;
+  list-style: none;
+  gap: 25px;
 }
 
 .navRight ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    /* padding-left: 50px; */
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  /* padding-left: 50px; */
 }
 
-.navRight button{
-   margin :0px;
-   width: 80px;
-   height: 30px;
-   border-radius: 6px;
-   outline: none;
-   border-style: none;
-  background-color:#7C3AED;
+.navRight button {
+  margin: 0px;
+  width: 80px;
+  height: 30px;
+  border-radius: 6px;
+  outline: none;
+  border-style: none;
+  background-color: #7c3aed;
 
-   color: white;
-   transition: all 0.1;
-   justify-content: center;
+  color: white;
+  transition: all 0.1;
+  justify-content: center;
+}
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transform: scale(1);
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: content;
+  background-color: black;
+  gap: 50px;
+  padding: 20px;
+}
+.card {
+   background: linear-gradient(to top, white, black,grey);
+  color: #1e293b;
+  width: 250px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 20px;
+  /* transform: scale(1); */
+}
 
+.card p {
+    margin-top:10px ;
+  text-shadow: 2px;
+  font-size: 15px;
+  color: white;
+ 
 }
-button:hover{
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    transform: scale(1);
 
+.card:hover {
+  transform: scale(1);
+  background-color: antiquewhite;
+  height: 20px;
 
-}
-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: content;
-    background-color:white;
-    gap: 50px;
-    padding:20px
-}
-.card{
-    background-color:#F8FAFC;
-    color:#1E293B;
-    width: 250px;
-    padding: 15px;
-    border: 2px solid  black;
-    border-radius: 30px;
-  
-
-}
-.card img{
-    width: 100%;
-    height: 180px;
-    margin-bottom: 20px;
-}
-.card p{
-    text-shadow: 2px;
-    font-size: 15px;
-}
-.card:hover{
-    transform: scale(1);
-    background-color: antiquewhite;
-   height: 20px;
-    
-    cursor:pointer;
-    
+  cursor: pointer;
 }
 /*  */
-.card h1{
-    margin-top: 10px;
-    /* margin-left: 20px; */
-    text-shadow: 2px;
-    font-size: 15px;
+.card h1 {
+  margin-top: 10px;
+  /* margin-left: 20px; */
+  text-shadow: 2px;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+footer {
+  border-top: 2px solid black;
+  position: relative;
+  top: 0px;
+  height: 100px;
+
+  background-color: black;
+}
+footer ul {
+  height: 100px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+.card .button{
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+    
+    margin-left: 150px;
+   margin-bottom: 70px;
+   background-color: black;
+   color: white;
+
+
+
 }
