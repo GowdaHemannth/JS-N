@@ -55,7 +55,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: content;
-  background-color: black;
+  background-color:White;
   gap: 50px;
   padding: 20px;
 }
@@ -86,7 +86,7 @@ main {
   transform: scale(1);
   background-color: antiquewhite;
   height: 20px;
-
+  background-color: #111;
   cursor: pointer;
 }
 /*  */
@@ -116,16 +116,108 @@ footer ul {
   list-style: none;
   color: white;
 }
-.card .button{
+.card .button1{
     padding: 5px;
     border-style: none;
     border-radius: 5px;
     
     margin-left: 150px;
-   margin-bottom: 70px;
+   margin-bottom: 90px;
    background-color: black;
    color: white;
 
 
 
+}
+/* Background overlay with blur */
+.popup {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+  z-index: 999;
+  gap: 20px;
+}
+
+/* Popup card */
+.popup-content{
+  width: 350px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  color: white;
+  text-align: center;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+
+  animation: popup 0.3s ease;
+}
+
+/* Image */
+.popup-content img{
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.popup-content p{
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 5px;
+  color: white;
+}
+
+/* Price */
+.popup-content h1{
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 8px;
+  color: white;
+}
+
+/* Rating */
+.popup-content span{
+  font-size: 14px;
+  color: #777;
+}
+
+/* Close Button */
+.button2{
+  margin-top: 18px;
+  padding: 10px 18px;
+ 
+  border: none;
+  border-radius: 8px;
+
+  background: linear-gradient(135deg,#6a5af9,#8e7dff);
+  color: white;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.button2:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Smooth popup animation */
+@keyframes popup{
+  from{
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
 }
