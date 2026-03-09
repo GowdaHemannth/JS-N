@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="Style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -19,6 +25,10 @@
         </section>
 
         <section class="navRight">
+          <form>
+            <i class="fa-solid fa-magnifying-glass Sicon"></i>
+            <input placeholder="Search Your Products" />
+          </form>
           <ul>
             <li><a href="">Home</a></li>
             <li id="contact"><a href="#footer">Contact</a></li>
@@ -51,25 +61,50 @@
     async function FetchingData() {
       let data = await fetch("https://fakestoreapi.com/products");
       let finalData = await data.json();
+      Rendering(finalData);
+     
+      
 
-      let main = document.getElementsByTagName("main")[0];
+      function Rendering(finalData) {
+        
+        let main = document.getElementsByTagName("main")[0];
+        main.innerHTML=''
+        finalData.map((items) => {
+          let Card = document.createElement("div");
+          Card.className = "card";
 
-      finalData.map((items) => {
-        let Card = document.createElement("div");
-        Card.className = "card";
-
-        Card.innerHTML = `<u><img src=${items.image} /></u>
+          Card.innerHTML = `<u><img src=${items.image} /></u>
                           <p>${items.title.slice(0, 10)}</p>
                           <h1>Price:$${items.price}</h1>
                            <button class='button1'>Veiw-Info</button>  `;
 
-        main.appendChild(Card);
-        console.log(Card);
-        let BuutonData = Card.getElementsByClassName("button1")[0];
-        BuutonData.addEventListener("click", () => {
-          showpop(items);
+          main.appendChild(Card);
+
+          let BuutonData = Card.getElementsByClassName("button1")[0];
+          BuutonData.addEventListener("click", () => {
+            showpop(items);
+          });
         });
-      });
+      }
+
+      let InputData = document.getElementsByTagName("input")[0];
+      InputData.addEventListener("keyup", handleSearch);
+      let SearchData = "";
+
+      //  With These Help of this We can Actualyy Get The Data
+      function handleSearch(e) {
+        SearchData = e.target.value.toLowerCase();
+        console.log(SearchData);
+       
+   let Result=   finalData.filter((items)=>{
+    return  items.category.includes(SearchData)
+        
+      })
+      Rendering(Result)
+      
+
+      
+      }
     }
     FetchingData();
     function showpop(items) {
@@ -82,11 +117,10 @@
                              <button  class='button2' >Close</button>`;
       document.body.append(div);
 
-      let bt2=document.getElementsByClassName("button2")[0]
-      bt2.addEventListener('click',()=>{
-        div.remove()
-      })
+      let bt2 = document.getElementsByClassName("button2")[0];
+      bt2.addEventListener("click", () => {
+        div.remove();
+      });
     }
-     
   </script>
 </html>

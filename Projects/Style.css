@@ -15,9 +15,32 @@ nav {
 }
 
 .navLeft h1 {
-  color: white;
+  color: black;
   font-size: 24px;
 }
+
+.navRight{
+  display: flex;
+   gap: 20px;
+   position: relative;
+   
+}
+.Sicon{
+  position: absolute;
+  left: 170px;
+  top: 10px;
+  
+
+}
+
+.navRight input{
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-style: none;
+
+}
+
+
 
 .navRight ul {
   display: flex;
@@ -31,6 +54,8 @@ nav {
   font-size: 18px;
   /* padding-left: 50px; */
 }
+
+
 
 .navRight button {
   margin: 0px;
