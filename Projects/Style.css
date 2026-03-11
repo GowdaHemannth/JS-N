@@ -19,28 +19,22 @@ nav {
   font-size: 24px;
 }
 
-.navRight{
+.navRight {
   display: flex;
-   gap: 20px;
-   position: relative;
-   
+  gap: 20px;
+  position: relative;
 }
-.Sicon{
+.Sicon {
   position: absolute;
   left: 170px;
   top: 10px;
-  
-
 }
 
-.navRight input{
+.navRight input {
   padding: 10px 20px;
   border-radius: 5px;
   border-style: none;
-
 }
-
-
 
 .navRight ul {
   display: flex;
@@ -54,8 +48,6 @@ nav {
   font-size: 18px;
   /* padding-left: 50px; */
 }
-
-
 
 .navRight button {
   margin: 0px;
@@ -76,16 +68,64 @@ button:hover {
   color: black;
   transform: scale(1);
 }
+.hero {
+  height: 90vh;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.LeftArrow,
+.RightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.LeftArrow {
+  left: 20px;
+}
+
+.RightArrow {
+  right: 20px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: content;
-  background-color:White;
+  background-color: White;
   gap: 50px;
   padding: 20px;
 }
 .card {
-   background: linear-gradient(to top, white, black,grey);
+  background: linear-gradient(to top, white, black, grey);
   color: #1e293b;
   width: 250px;
   padding: 15px;
@@ -100,11 +140,10 @@ main {
 }
 
 .card p {
-    margin-top:10px ;
+  margin-top: 10px;
   text-shadow: 2px;
   font-size: 15px;
   color: white;
- 
 }
 
 .card:hover {
@@ -124,35 +163,16 @@ main {
   align-items: center;
   color: white;
 }
-footer {
-  border-top: 2px solid black;
-  position: relative;
-  top: 0px;
-  height: 100px;
 
+.card .button1 {
+  padding: 5px;
+  border-style: none;
+  border-radius: 5px;
+
+  margin-left: 150px;
+  margin-bottom: 90px;
   background-color: black;
-}
-footer ul {
-  height: 100px;
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
   color: white;
-}
-.card .button1{
-    padding: 5px;
-    border-style: none;
-    border-radius: 5px;
-    
-    margin-left: 150px;
-   margin-bottom: 90px;
-   background-color: black;
-   color: white;
-
-
-
 }
 /* Background overlay with blur */
 .popup {
@@ -163,14 +183,14 @@ footer ul {
   justify-content: center;
   align-items: center;
 
-  background: rgba(0,0,0,0.35);
+  background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(6px);
   z-index: 999;
   gap: 20px;
 }
 
 /* Popup card */
-.popup-content{
+.popup-content {
   width: 350px;
   background: white;
   padding: 30px;
@@ -178,13 +198,13 @@ footer ul {
   color: white;
   text-align: center;
 
-  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 
   animation: popup 0.3s ease;
 }
 
 /* Image */
-.popup-content img{
+.popup-content img {
   width: 130px;
   height: 130px;
   object-fit: contain;
@@ -192,7 +212,7 @@ footer ul {
 }
 
 /* Title */
-.popup-content p{
+.popup-content p {
   font-size: 15px;
   color: #555;
   margin-bottom: 5px;
@@ -200,7 +220,7 @@ footer ul {
 }
 
 /* Price */
-.popup-content h1{
+.popup-content h1 {
   font-size: 22px;
   color: #111;
   margin-bottom: 8px;
@@ -208,20 +228,20 @@ footer ul {
 }
 
 /* Rating */
-.popup-content span{
+.popup-content span {
   font-size: 14px;
   color: #777;
 }
 
 /* Close Button */
-.button2{
+.button2 {
   margin-top: 18px;
   padding: 10px 18px;
- 
+
   border: none;
   border-radius: 8px;
 
-  background: linear-gradient(135deg,#6a5af9,#8e7dff);
+  background: linear-gradient(135deg, #6a5af9, #8e7dff);
   color: white;
 
   font-weight: 600;
@@ -230,19 +250,127 @@ footer ul {
   transition: 0.3s;
 }
 
-.button2:hover{
+.button2:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Smooth popup animation */
-@keyframes popup{
-  from{
+@keyframes popup {
+  from {
     transform: scale(0.8);
     opacity: 0;
   }
-  to{
+  to {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+footer {
+  background: #0f172a;
+  color: white;
+  padding: 50px 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  width: 220px;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.news {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.news img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.social i {
+  margin-right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+/* Buttons  */
+.MainButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#Button1 {
+  border-radius: 6px;
+  padding: 10px;
+  outline: none;
+  border-style: none;
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+}
+
+#Button2 {
+  border-radius: 6px;
+  padding: 10px;
+  outline: none;
+  border-style: none;
+  background-color: black;
+  color: white;
+}
+
+#Button3{
+   border-radius: 6px;
+  padding: 10px;
+  outline: none;
+  border-style: none;
+  background-color: black;
+  color: white;
+
+}
+
+#Button4{
+    border-radius: 6px;
+  padding: 10px;
+  outline: none;
+  border-style: none;
+  background-color: black;
+  color: white;
+  margin-right: 10px;
+
 }

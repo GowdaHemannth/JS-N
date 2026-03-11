@@ -40,21 +40,106 @@
         </section>
       </nav>
     </header>
+    <section class="hero">
+      <div class="hero-images">
+        <img
+          src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da"
+          class="slide"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+          class="slide"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f"
+          class="slide"
+        />
+      </div>
 
+      <div class="LeftArrow">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+
+      <div class="hero-content">
+        <h1>Discover Amazing Products</h1>
+        <p>
+          Find the best products with the best prices. Explore our collection
+          and shop smarter.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="hero-btn">Shop Now</button>
+          <button class="hero-btn2">Explore</button>
+        </div>
+      </div>
+
+      <div class="RightArrow">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </section>
+    <div class="MainButtons">
+      <button id="Button1">Get Mens-Collection</button>
+      <button id="Button2">Get Womens-Collections</button>
+      <button id="Button3">Get Electronics-Products</button>
+      <button id="Button4">Get Jweleryy-Products</button>
+    </div>
     <main></main>
+
     <footer id="footer">
-      <ul>
-        <li>Help</li>
-        <li>Status</li>
-        <li>About</li>
-        <li>Carrer</li>
-        <li>Email</li>
-        <li>Blog</li>
-        <li>Privacy</li>
-        <li>Contact</li>
-        <li>Terms</li>
-        <li>Text to speech</li>
-      </ul>
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Colorlib</h3>
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
+
+          <div class="social">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Latest News</h3>
+
+          <div class="news">
+            <img src="https://picsum.photos/60" />
+            <p>Even the all-powerful Pointing has no control</p>
+          </div>
+
+          <div class="news">
+            <img src="https://picsum.photos/61" />
+            <p>Even the all-powerful Pointing has no control</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Works</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Have a Questions?</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i> 203 Fake St Mountain View
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +2 392 3929 210</p>
+          <p><i class="fa-solid fa-envelope"></i> info@yourdomain.com</p>
+        </div>
+      </div>
+
+      <p class="copyright">Copyright ©2026 All rights reserved</p>
     </footer>
   </body>
   <script>
@@ -62,13 +147,10 @@
       let data = await fetch("https://fakestoreapi.com/products");
       let finalData = await data.json();
       Rendering(finalData);
-     
-      
 
       function Rendering(finalData) {
-        
         let main = document.getElementsByTagName("main")[0];
-        main.innerHTML=''
+        main.innerHTML = "";
         finalData.map((items) => {
           let Card = document.createElement("div");
           Card.className = "card";
@@ -95,17 +177,57 @@
       function handleSearch(e) {
         SearchData = e.target.value.toLowerCase();
         console.log(SearchData);
-       
-   let Result=   finalData.filter((items)=>{
-    return  items.category.includes(SearchData)
-        
-      })
-      Rendering(Result)
-      
+
+        let Result = finalData.filter((items) => {
+          return items.category.includes(SearchData);
+        });
+        Rendering(Result);
+      }
+
+      //  Button 1 is Clicked
+      let Btn1 = document.getElementById("Button1");
+      Btn1.addEventListener("click", () => {
+        let Button1Result = finalData.filter((items) => {
+          return items.category === "men's clothing";
+        });
+        Rendering(Button1Result);
+      });
+
+      // Button 2 IS Clicked
+      let Btn2 = document.getElementById("Button2");
+      console.log(Btn2);
+      Btn2.addEventListener("click", () => {
+        let Result2 = finalData.filter((items) => {
+          return items.category === "women's clothing";
+        });
+        Rendering(Result2);
+      });
 
       
-      }
+    // Button3 Is Cliked
+    let Btn3= document.getElementById('Button4');
+
+    Btn3.addEventListener('click',()=>{
+      let Result3=finalData.filter((items)=>{
+        return items.category==="jewelery"
+      });
+      Rendering(Result3)
+
+    })
+
+    // Button 4 is Clciked
+    let Btn4=document.getElementById('Button3');
+    Btn4.addEventListener('click',()=>{
+      let Result4=finalData.filter((items)=>{
+        return items.category=='electronics'
+      })
+      Rendering(Result4)
+    })
+
+
     }
+
+
     FetchingData();
     function showpop(items) {
       const div = document.createElement("div");
@@ -122,5 +244,35 @@
         div.remove();
       });
     }
+    const slides = document.querySelectorAll(".slide");
+    const left = document.querySelector(".LeftArrow");
+    const right = document.querySelector(".RightArrow");
+
+    let counter = 0;
+
+    right.addEventListener("click", () => {
+      if (counter < slides.length - 1) {
+        counter++;
+      } else {
+        counter = 0;
+        console.log("Else Executed");
+      }
+
+      console.log(slides);
+
+      slides.forEach(
+        (slide) => (slide.style.transform = `translateX(-${counter * 100}%)`),
+      );
+    });
+
+    // left.addEventListener("click", () => {
+    //   if (counter > 0) {
+    //     counter--;
+    //   }
+
+    //   slides.forEach((slide) => {
+    //     slide.style.transform = `translateX(-${counter * 100}%)`;
+    //   });
+    // });
   </script>
 </html>
