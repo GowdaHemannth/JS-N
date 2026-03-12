@@ -131,6 +131,7 @@ main {
   padding: 15px;
   border: 2px solid black;
   border-radius: 30px;
+  position: relative;
 }
 .card img {
   width: 100%;
@@ -373,4 +374,24 @@ footer {
   color: white;
   margin-right: 10px;
 
+}
+
+.slide{
+  transition: transform 0.8s ease;
+}
+
+
+/* CART BUTTONS */
+
+.New{
+  display:flex;
+  
+  align-items: center;
+}
+.CartButton{
+  border-radius: 2px;
+  border-style: none;
+  padding: 6px;
+  background-color: #0f172a;
+  color: aliceblue;
 }
