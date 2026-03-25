@@ -37,6 +37,8 @@ function Calculate(...num1){ /// Here it will return as many arguments you pass
 }
 
 // 
+//  Here the When Function is Called And Varibles are Passed 
+//  The First Two Varibles will be Treated as the VAl1,val2 then the Rets will be Treated Neatly
 function Calculate(val1,val2,...num1){ /// Here it will return onlty the values after the val1,val2
  return num1
 }

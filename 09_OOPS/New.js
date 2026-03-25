@@ -8,6 +8,9 @@ class Hero {
 function Hero() {} // SO ABOVE CLASS IS NOTHING BUT A FUNCTION AND CONSTRUCTOR IS  PROTOTY[E ]
 Hero.prototype.attack = function () {};
 
+//  From Seeing Above Code You Might be Wondering Why There is nothing Working on
+//  But The thing is Here class Hero is Jsut A Sugar Coat Thing For the Hero Function
+
 // THEN ONE MORE THING WE HAVE DOUBT COMMNLY IS IN CLASS HERO WE HAVE ATTACK AS A CONSTRUCTOR
 // BUT WE MIGHT AS THEN WHAT IS THIS CONST HERO=NEW HERO() EVEN THIS IS ALSO A CONSTRUCTOR RIGHT
 // EXPLANATION IS GIVEN BELOW
@@ -33,3 +36,6 @@ Hero.prototype.attack = function () {};
 // 4️⃣ Returns the object
 // constructor("Hemanth");
 // is called by new.
+
+// 3️⃣ new does 4 internal steps (object creation, prototype link, constructor call, return object)
+//  After the Costructor called protoype is Called 

@@ -1,4 +1,7 @@
 // Lets start with the object literal Here
+
+
+//  Object Literal is a Simpliset Way to Create THE {}
 // what is object literal it doesnt Mean Anything Simply it means One Object
 const user = {
   username: "CAPTTAIN-AMERICA",

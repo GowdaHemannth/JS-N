@@ -16,12 +16,15 @@
 // // Map is also Object
 // // Speciality of Maps in Javascript id It Remmebers the Order of Insertion
 // Another Speciality is You can not Store Dupicate Vlues Here
-// const map = new Map();
-// map.set("in", "India");
-// map.set("USA", "AMERICA");
-// map.set("UN", "ENGLAND");
-// map.set("SL", "SRI-LANKA");
-// console.log(map)
+const map = new Map();
+map.set("in", "India");
+map.set("USA", "AMERICA");
+map.set("UN", "ENGLAND");
+map.set("SL", "SRI-LANKA");
+//  Here Duplicate Value will not be Created but here in will reeplace the  in -->> India But Later in --->>> Sri-Lankha
+map.set('in',"SriLankha")
+map.set('Niegeria',"India")
+console.log(map)
 
 // // HERE FOR PRINTING THE Key and VAlue Pair
 // for(const [key,value] of map){

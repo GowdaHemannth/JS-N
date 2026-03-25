@@ -41,6 +41,7 @@
 // Here we will be defing how do define getter and Setter using constructor 
 
 class Hemanth {
+  //  Here Constructor is Constructor AS Differnt From the Python Where We Used to Write Construtor as __int__
   constructor(email, password) {
     this.email = email;
     this._password = password;

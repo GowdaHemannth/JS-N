@@ -21,6 +21,9 @@
 
 // REDUCE FUNCTION 
 // Can be Used for the Total Amount For the Shopping Website 
+
+//  Here acc Stores the Previous Value 
+//  And currval stores the Present Value
 const myNums=[1,2,3,4,5]
-const N=myNums.reduce((acc,currval)=>acc+currval,0)
+const N=myNums.reduce((acc,currval)=>currval,0)
 console.log(N)

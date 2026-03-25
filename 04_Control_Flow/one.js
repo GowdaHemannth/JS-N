@@ -1,5 +1,6 @@
 // These Control Flow is Nothing But a Thing Where i Want only certain Amunt of code at a Time 
 //// Here 2=='2' These will be False But we will get executed 
+//  IF '2'===2 HERE IT GIVES STRICT VALUE 
 // but if you want to check the Datatype of it then Check these
 // truthy values and Falsey_Values 
 const UserEmail=''

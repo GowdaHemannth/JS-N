@@ -22,6 +22,8 @@ function Heros(Name,Score){
 Heros.prototype.Increment=function(){
     // here this for current context who ever calss them 
     this.Score++ 
+    console.log(this.Score);
+    
 }
 Heros.prototype.Power=function(){
   console.log(`Score is ${this.Score}`) // who ever call us reply them so we used this Keyword here 
@@ -35,3 +37,7 @@ const IronMan=new Heros("Iron-Man",250)
 // Here you Can Access these without using prototype but 
 // Without Using new Keyword You Can-not ANY Protoype thing and Access it 
 CaptainAmerica.Increment()
+
+
+//  Has Tou Can See there is Nothing Much Difernce Between the  Class and the Fucntion 
+//  just the in function e add thing 

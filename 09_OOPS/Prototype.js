@@ -18,7 +18,7 @@ let heroPower={
 }
 //
 Object.prototype.hitesh=function(){
-    console.log(("oh my Captain "));
+    console.log(("oh my Captain  ","Object PROTOTYPE"));
     
 }
 
@@ -33,11 +33,16 @@ Heros.hitesh()
 
 // any power given to object can be used by aray or string but power given to array can notbe used by objects 
 Array.prototype.heybuudy=function(){
-    console.log("All Good");
+    console.log("All Good arrays caled");
     
 }
+
+
+//  IF YOU WANT ADD FUCTION TO THE  Arrays Arrays.prototype.hh=function(){  }   for 
+// For Object Object.prototype.hh
+
 Heros.heybuudy()
-// heroPower.heybuudy() will get err 
+
 
 
 // Lets us Learn inherirtance Here 

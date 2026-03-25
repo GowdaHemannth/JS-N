@@ -1,6 +1,9 @@
 // Here in the Arrays of Javascript You can Store Multiple Values in a Single Variable 
 // Resize THese are Refernce based  Array So they are Shallow Copy
 // Shallow Copy Means you Can add the array but in the backend there will be new object created 
+
+//  Here Sha;llow Copy Means When we do arr1=[1,2,3,4] arr1==arr2 That Means No New Copy Created it jUST POINTS TO THE SAME COPY 
+// HENCE THEY CALLES TAHT HAS SHALLOW COPY
 const Array=[1,2,3,4,5,6,7,8,9];
 console.log(Array.length)
 //Can add Value 
@@ -19,6 +22,24 @@ console.log(Array);
 // .join
 // HERE YOU CAN USE JOIN BUT IT WILL BE CONVERTED INTO ARRAY
 //\
+
+//  In Slice 
+// here in slice new array is not created it just modifies the array original will not be effected by these
+ let arr=[1,2,3,4,5,6,7]
+ let ArrB=arr.slice(0,2)
+ console.log(ArrB);
+ console.log(arr);
+ 
+
+//  Splice is very differnt thing as compared to the slice
+let h=[1,2,3,4]
+let n=h.splice(0,3)
+// Here The Original Array Will be Effected 
+console.log("modifd ",n);
+console.log("original",h);
+
+
+ 
 
 // Slic,splice
 console.log('A',)
