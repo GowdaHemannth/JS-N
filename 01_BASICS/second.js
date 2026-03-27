@@ -16,7 +16,7 @@ functionName();
 
 
 // Here we will be Discsuing About Stsck Memory and Heap Memory
-// Stack Memory Will be Used in Primitive Data Types
+// Stack Memory Will be Used in Primitive Data Types 
 // Learn Perfectly about Stack (Primitive)memory-->> Where Copy of the Original Value is Stored 
 // Then Heap (Non-Primitive) Memory--> Where refernce of the Original Value is Stored ...
 // What happens in memory
@@ -36,6 +36,10 @@ console.log(anotherYoutubeName);
 // Here output will be Differnt Beacuse both are stored in Stack Memory;
 
 // Here in the Same way you do that in Non-Primitive Data  The Second Changes Data Will also be Changes 
+
+
+
+// Here For the Primitive  And non Primitive I guess We Have  
 
 
 //  Here in non Primitive Data Types ;Liek Object Array Function Here the Copy of the Non primitive Doesnt Happens here 

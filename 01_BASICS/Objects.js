@@ -63,7 +63,8 @@ const obj2={3:'a',4:'b'}
 //   Here These Assign will be Used to Spread the values then add it into the Single Object
 // First It will be Assigned to Empty Object 
 // then object1 will be Copied ,then object2 
-
+//  How Assign is Used Two Objects Will be Be Added into the Single Object 
+//  Then we can
 const obj3=Object.assign({},obj1,obj2) 
 
 console.log(obj3)
@@ -74,6 +75,7 @@ const obj4={...obj1,...obj2}
 console.log(obj4)
 
 // ---Here if We Wanted to Get all the Keys From 
+//  Here if you Wanted to Access Only the Keys and Values from the Objects You can use these
 console.log('A',Object.keys(TinderUser))
 console.log(Object.values(TinderUser))
 
